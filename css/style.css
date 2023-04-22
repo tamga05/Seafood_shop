@@ -11,7 +11,6 @@ a {
 
 body {
     font-family: 'Roboto', sans-serif;
-    /*font-family: 'Roboto Slab', serif;*/
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
@@ -60,4 +59,67 @@ body {
 
 .menu__link:hover {
     border-bottom: 1px solid #001E64;
+}
+
+.header__content {
+    background-image: url("../images/header-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 95px;
+    color: #001E64;
+    max-width: 589px;
+    padding-top: 200px;
+    padding-left: 112px;
+    margin-bottom: 130px;
+}
+
+.header-slider {
+    max-width: 522px;
+    padding-left: 112px;
+    padding-top: 57px;
+    padding-bottom: 135px;
+}
+
+.header-slider__text {
+    font-size: 18px;
+    line-height: 22px;
+    color: #ffffff;
+}
+
+.header-slider__text + .header-slider__text {
+    margin-top: 25px;
+}
+
+.slick-prev, .slick-next {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    position: absolute;
+    left: 40px;
+}
+
+.slick-prev {
+    top: 0;
+}
+
+.slick-next {
+    bottom: 0;
+}
+
+.slick-dots {
+    list-style: none;
+}
+
+.slick-dots button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
 }
