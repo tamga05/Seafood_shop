@@ -16,6 +16,11 @@ body {
     line-height: 19px;
 }
 
+/* Устанавливаю ширину вертикального скролла равной 0px */
+::-webkit-scrollbar {
+    width: 0;
+}
+
 .container {
     max-width: 1220px;
     padding: 0 10px;
@@ -25,7 +30,7 @@ body {
 .header__top {
     display: flex;
     justify-content: space-between;
-    padding-top: 27px;
+    padding-top: 15px;
 }
 
 .logo {
@@ -66,6 +71,13 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding-bottom: 18px;
+
+    /* Растягиваю "первый" экран на ВСЮ высоту для разных мониторов */
+    min-height: calc(100vh - 50px);
+
+    /* Поднимаю фоновую картинку на 100px вверх вместе с header-content */
+    margin-top: -100px;
 }
 
 .title {
@@ -77,7 +89,7 @@ body {
     max-width: 589px;
     padding-top: 200px;
     padding-left: 112px;
-    margin-bottom: 130px;
+    margin-bottom: 73px;
 }
 
 .header-slider {
@@ -116,6 +128,13 @@ body {
 
 .slick-dots {
     list-style: none;
+    position: absolute;
+    left: 35px;
+    top: 55px;
+    bottom: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .slick-dots button {
@@ -140,6 +159,43 @@ body {
 
 .slick-dots li:nth-child(n+10) button::before {
     content: '';
+}
+
+.header__content-btn {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+    padding: 14px 88px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    margin-left: 112px;
+    display: inline-block;
+    transform: translateY(-100px);
+}
+
+.header__content_box {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: flex-end;
+    /*margin-left: 100%;*/
+    margin-right: 30px;
+    margin-bottom: 55px;
+}
+
+.header__content-link {
+    margin-left: 5px;
+}
+
+.header__content-link--active {
+    font-weight: 700;
+    margin-left: 0;
+    margin-right: 5px;
 }
 
 
