@@ -14,11 +14,12 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
+    color: #232222;
 }
 
 /* Устанавливаю ширину вертикального скролла равной 0px */
 ::-webkit-scrollbar {
-    width: 0;
+    /*width: 0;*/
 }
 
 .container {
@@ -198,4 +199,133 @@ body {
     margin-right: 5px;
 }
 
+.product {
+    padding-top: 100px;
+    padding-left: 88px;
+}
 
+.product__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product__name {
+    width: 510px;
+    text-align: center;
+    padding-top: 41px;
+}
+
+.product-prev {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.product-prev, .product-next {
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.product__name-item {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    cursor: pointer;
+}
+
+.product__name-item.slick-current {
+    font-weight: 700;
+    font-size: 36px;
+    /*line-height: 47px;*/
+    color: #001E64;
+    transition: .5s;
+}
+
+.product__name-item + .product__name-item {
+    margin-top: 30px;
+}
+
+.product__content {
+    width: 600px;
+}
+
+.product__content-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2px;
+}
+
+.product__content-img {
+    max-width: 260px;
+    object-fit: cover;
+}
+
+.product__content-list {
+    width: 291px;
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+.product__content-item {
+    font-family: 'Roboto', sans-serif;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*margin-bottom: 30px;*/
+}
+
+.product__content-item + .product__content-item {
+    margin-top: 30px;
+}
+
+.product__content-item span {
+    display: block;
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    line-height: 24px;
+    color: #001E64;
+    margin-bottom: 10px;
+}
+
+.product__content-title {
+    font-family: 'Roboto Slab', serif;
+    /*font-style: normal;*/
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #001E64;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+.product__content-text {
+    line-height: 120%;
+    margin-bottom: 27px;
+}
+
+.product__content-btn {
+    /*width: 300px;*/
+    /*height: 55px;*/
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    padding: 12px 85px;
+    border: 1px solid #001E64;
+    border-radius: 20px;
+    background: transparent;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #001E64;
+    cursor: pointer;
+}
+
+.product__content-btn:hover {
+    background: #6fd6f6;
+    transition: .3s;
+}
