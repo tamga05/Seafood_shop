@@ -176,6 +176,11 @@ body {
     transform: translateY(-100px);
 }
 
+.header__content-btn:hover {
+    color: #001E64;
+    background: #ffffff;
+}
+
 .header__content_box {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -326,6 +331,50 @@ body {
 }
 
 .product__content-btn:hover {
-    background: #6fd6f6;
-    transition: .3s;
+    background: linear-gradient(45deg, #001E64 0%, #1C6EA4 30%, #6FD6F6 100%);
+    color: #ffffff;
+}
+
+.advantages {
+    background-image: url("../images/advantages-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 254px 0 98px;
+    margin-top: 36px;
+}
+
+.advantages__block {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 90px;
+}
+
+.advantages__block-item {
+    width: 180px;
+    min-height: 165px;
+    background-image: url("../images/shell.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.container-inner{
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.information__block{
+    display: flex;
 }
