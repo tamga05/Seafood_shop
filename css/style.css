@@ -457,3 +457,35 @@ body {
     text-align: center;
 }
 
+.contacts {
+    background-image: url("../images/contacts-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+
+.contacts__box {
+    margin-left: auto;
+    max-width: 390px;
+    background: #FFFFFF;
+    padding: 30px 0 30px 20px;
+}
+
+.contacts__box-text {
+    max-width: 195px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    line-height: 24px;
+    color: #001E64;
+    margin-bottom: 30px;
+}
+
+.contacts__box-list {
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.contacts__box-item + .contacts__box-item {
+    margin-top: 30px;
+}
