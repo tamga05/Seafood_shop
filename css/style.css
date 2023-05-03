@@ -64,7 +64,7 @@ body {
 }
 
 .menu__link:hover {
-    border-bottom: 1px solid #001E64;
+    border-bottom: 2px solid #001E64;
 }
 
 .header__content {
@@ -174,6 +174,7 @@ body {
     margin-left: 112px;
     display: inline-block;
     transform: translateY(-100px);
+    transition: all .3s;
 }
 
 .header__content-btn:hover {
@@ -328,6 +329,7 @@ body {
     line-height: 32px;
     color: #001E64;
     cursor: pointer;
+    transition: all .3s;
 }
 
 .product__content-btn:hover {
@@ -494,6 +496,18 @@ body {
     margin-top: 30px;
 }
 
+.contacts__box-link {
+
+}
+
+.contacts__box-link:hover {
+    border-bottom: 2px solid #1C6EA4;
+    color: #1C6EA4;
+    /*padding-bottom: 2px;*/
+    /*border-radius: 10px;*/
+    /*background: linear-gradient(45deg, #001E64 0%, #1C6EA4 30%, #6FD6F6 100%);*/
+    /*color: #ffffff;*/
+}
 
 .footer__inner {
     padding: 29px 45px 109px 23px;
@@ -509,10 +523,27 @@ body {
 .footer__social-list {
     list-style-type: none;
     display: flex;
+    align-items: center;
     gap: 10px;
     margin-bottom: 22px;
 }
 
 .footer__social-item {
 
+}
+
+.footer__social-link.link-1:hover path {
+    fill: #D53F68;
+}
+
+.footer__social-link.link-2:hover path {
+    fill: #2AABEE;
+}
+
+.footer__social-link.link-3:hover path {
+    fill: #25D366;
+}
+
+.footer__social-link.link-4:hover path {
+    fill: #3b5998;
 }
