@@ -190,13 +190,13 @@ body {
     color: #FFFFFF;
     display: flex;
     justify-content: flex-end;
-    /*margin-left: 100%;*/
     margin-right: 30px;
     margin-bottom: 55px;
 }
 
 .header__content-link {
     margin-left: 5px;
+    cursor: pointer;
 }
 
 .header__content-link--active {
@@ -546,4 +546,74 @@ body {
 
 .footer__social-link.link-4:hover path {
     fill: #3b5998;
+}
+
+/* Медиа-запросы */
+
+@media screen and (max-width: 950px) {
+    .header__top {
+        padding-top: 50px;
+    }
+
+    .header__content {
+        min-height: 0;
+        transition: 2s;
+        margin-top: -200px;
+    }
+
+    .menu {
+        margin-top: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .menu__list {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .menu__item + .menu__item {
+        margin-left: 0;
+    }
+
+    .menu__link {
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    .title {
+        font-size: 55px;
+        padding-left: 0;
+        margin: 200px auto 73px;
+        text-align: center;
+    }
+
+    .header__content_box {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .header__top {
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .title {
+        font-size: 35px;
+    }
+
+    .header__content-btn {
+        padding: 14px 20px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .phone {
+        margin-top: 120px;
+        margin-right: 0;
+    }
 }
