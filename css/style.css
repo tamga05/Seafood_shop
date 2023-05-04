@@ -548,6 +548,7 @@ body {
     fill: #3b5998;
 }
 
+
 /* Медиа-запросы */
 
 @media screen and (max-width: 950px) {
@@ -592,6 +593,26 @@ body {
     .header__content_box {
         font-size: 24px;
     }
+
+    .product {
+        padding-top: 30px;
+        padding-left: 0;
+    }
+
+    .product__inner {
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+
+    .product__content-btn {
+        display: block;
+        margin: 50px auto 0;
+    }
+
+    .product__content-text {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 480px){
@@ -613,6 +634,7 @@ body {
     }
 
     .phone {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
         margin-top: 110px;
         margin-right: 0;
         border: 1px solid #001E64;
