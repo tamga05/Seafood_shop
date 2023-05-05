@@ -5,7 +5,17 @@ $(function () {
         prevArrow: '<button type="button" class="slick-prev"><img src="images/prev.svg" alt="prev"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="images/next.svg" alt="next"></button>',
         vertical: true,
-        autoplay: true
+        autoplay: true,
+        responsive: [
+            {
+                breakpoint: 631,
+                settings: {
+                    dots: false,
+                    arrows: false,
+                    // autoplay: true
+                }
+            }
+        ]
     });
 
     $('.product__name').slick({
