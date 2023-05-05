@@ -11,8 +11,7 @@ $(function () {
                 breakpoint: 631,
                 settings: {
                     dots: false,
-                    arrows: false,
-                    // autoplay: true
+                    arrows: false
                 }
             }
         ]
@@ -24,10 +23,21 @@ $(function () {
         focusOnSelect: true,
         asNavFor: '.product__content',
         vertical: true,
-        // autoplay: true,
+        autoplay: true,
         prevArrow: '<button type="button" class="product-prev"><img src="images/product-prev.svg" alt="product-prev"></button>',
-        nextArrow: '<button type="button" class="product-next"><img src="images/product-next.svg" alt="product-next"></button>'
+        nextArrow: '<button type="button" class="product-next"><img src="images/product-next.svg" alt="product-next"></button>',
+        responsive: [
+            {
+                breakpoint: 631,
+                settings: {
+                    arrows: true,
+                    autoplay: false,
+                    slidesToShow: 3
+                }
+            }
+        ]
     });
+
     $('.product__content').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
