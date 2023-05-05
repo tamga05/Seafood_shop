@@ -46,8 +46,14 @@ body {
 }
 
 .phone {
+    width: 30px;
+    height: 30px;
     margin-top: 11px;
     margin-right: 43px;
+}
+
+.phone:hover .phone__img path {
+    fill: #1da1f2;
 }
 
 .menu {
@@ -368,11 +374,12 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 0 90px;
+    flex-wrap: wrap;
 }
 
 .advantages__block-item {
-    max-width: 180px;
-    min-height: 165px;
+    width: 180px;
+    height: 165px;
     background-image: url("../images/shell.svg");
     background-position: center;
     background-repeat: no-repeat;
@@ -654,9 +661,24 @@ body {
 
     }
 
-    /*.slick-track {*/
-    /*    max-width: 100%;*/
-    /*}*/
+    .advantages {
+        background-image: none;
+        background-color: #1C6EA4;
+        border-radius: 30px;
+        padding: 50px 0 50px;
+        margin-top: -110px;
+    }
+
+    .advantages__block {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        padding: 0 50px;
+    }
+
+    .advantages__block-item {
+
+    }
 }
 
 @media screen and (max-width: 631px) {
