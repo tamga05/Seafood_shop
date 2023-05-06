@@ -15,6 +15,19 @@ a {
     color: inherit;
     text-decoration: none;
 }
+/* Оборачивание кавычками цитаты в теге q */
+q {
+    quotes: "„ " " “";
+}
+
+q:before {
+    content: open-quote;
+}
+
+q:after {
+    content: close-quote;
+}
+/*--------------------------------------------------------------------*/
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -473,7 +486,7 @@ body {
 .promoushen__img {
     max-width: 800px;
     width: 100%;
-    height: 312px;
+    /*height: 312px;*/
     /*opacity: 0.5;*/
 }
 
@@ -581,6 +594,18 @@ body {
     .product {
         padding-top: 50px;
         padding-left: 0;
+    }
+
+    .information__container-inner {
+        padding: 50px 0;
+    }
+
+    .promoushen__container-inner {
+        padding: 0;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -694,10 +719,6 @@ body {
 
     .advantages__block-item {
 
-    }
-
-    .information__container-inner {
-        padding: 50px 0;
     }
 
     .information__block {
